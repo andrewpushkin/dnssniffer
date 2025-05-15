@@ -79,6 +79,39 @@ sudo ./dnssniffer -i <interface> [-v level] [-h]
 sudo ./dnssniffer -i eth0 -v 2
 ```
 
+#### Example Output
+
+```
+$ sudo ./dnssniffer -i enp0s3
+[sudo] password for vboxuser: 
+
+Domain: glb-db52c2cf8be544.github.com,
+IPv4 addresses:
+  140.82.114.22
+
+
+Domain: sourcegraph.com,
+IPv4 addresses:
+  104.18.32.187
+  172.64.155.69
+
+
+Domain: glb-db52c2cf8be544.github.com,
+IPv4 addresses:
+  140.82.113.22
+
+
+Domain: iii.com,
+IPv4 addresses:
+  23.185.0.4
+
+
+Domain: iii.com,
+IPv6 addresses:
+  2620:12a:8000::4
+  2620:12a:8001::4
+```
+
 ## Security Considerations
 
 1. **Root Privileges**: This program requires root privileges to capture packets. Run with sudo or as root.
